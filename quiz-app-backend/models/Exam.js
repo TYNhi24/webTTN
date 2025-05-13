@@ -7,8 +7,6 @@ const examSchema = new mongoose.Schema({
     startTime: { type: Date, required: true },
     endTime: { type: Date, required: true },
     questions: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Question' }],
-    shuffleQuestions: { type: Boolean, default: false },
-    shuffleAnswers: { type: Boolean, default: false },
     createdAt: { type: Date, default: Date.now },
 });
 
